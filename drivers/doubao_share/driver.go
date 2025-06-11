@@ -3,10 +3,10 @@ package doubao_share
 import (
 	"context"
 	"errors"
-	"github.com/alist-org/alist/v3/drivers/base"
-	"github.com/alist-org/alist/v3/internal/driver"
-	"github.com/alist-org/alist/v3/internal/errs"
-	"github.com/alist-org/alist/v3/internal/model"
+	"github.com/NodeSeekDev/nlist/v3/drivers/base"
+	"github.com/NodeSeekDev/nlist/v3/internal/driver"
+	"github.com/NodeSeekDev/nlist/v3/internal/errs"
+	"github.com/NodeSeekDev/nlist/v3/internal/model"
 	"github.com/go-resty/resty/v2"
 	"net/http"
 )

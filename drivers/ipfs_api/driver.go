@@ -8,8 +8,8 @@ import (
 
 	shell "github.com/ipfs/go-ipfs-api"
 
-	"github.com/alist-org/alist/v3/internal/driver"
-	"github.com/alist-org/alist/v3/internal/model"
+	"github.com/NodeSeekDev/nlist/v3/internal/driver"
+	"github.com/NodeSeekDev/nlist/v3/internal/model"
 )
 
 type IPFS struct {

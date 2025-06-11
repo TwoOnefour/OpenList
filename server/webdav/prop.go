@@ -17,8 +17,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/server/common"
+	"github.com/NodeSeekDev/nlist/v3/internal/model"
+	"github.com/NodeSeekDev/nlist/v3/server/common"
 )
 
 // Proppatch describes a property update instruction as defined in RFC 4918.

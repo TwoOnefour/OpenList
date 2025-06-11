@@ -4,12 +4,12 @@ import (
 	stdpath "path"
 	"time"
 
+	"github.com/NodeSeekDev/nlist/v3/internal/db"
+	"github.com/NodeSeekDev/nlist/v3/internal/errs"
+	"github.com/NodeSeekDev/nlist/v3/internal/model"
+	"github.com/NodeSeekDev/nlist/v3/pkg/singleflight"
+	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
 	"github.com/Xhofe/go-cache"
-	"github.com/alist-org/alist/v3/internal/db"
-	"github.com/alist-org/alist/v3/internal/errs"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/pkg/singleflight"
-	"github.com/alist-org/alist/v3/pkg/utils"
 	"github.com/pkg/errors"
 	"gorm.io/gorm"
 )

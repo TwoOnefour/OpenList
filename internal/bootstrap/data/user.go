@@ -3,12 +3,12 @@ package data
 import (
 	"os"
 
-	"github.com/alist-org/alist/v3/cmd/flags"
-	"github.com/alist-org/alist/v3/internal/db"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/pkg/utils"
-	"github.com/alist-org/alist/v3/pkg/utils/random"
+	"github.com/NodeSeekDev/nlist/v3/cmd/flags"
+	"github.com/NodeSeekDev/nlist/v3/internal/db"
+	"github.com/NodeSeekDev/nlist/v3/internal/model"
+	"github.com/NodeSeekDev/nlist/v3/internal/op"
+	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
+	"github.com/NodeSeekDev/nlist/v3/pkg/utils/random"
 	"github.com/pkg/errors"
 	"gorm.io/gorm"
 )

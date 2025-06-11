@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
+	"github.com/NodeSeekDev/nlist/v3/drivers/pikpak"
+	"github.com/NodeSeekDev/nlist/v3/internal/op"
+	"github.com/NodeSeekDev/nlist/v3/pkg/singleflight"
 	"github.com/Xhofe/go-cache"
-	"github.com/alist-org/alist/v3/drivers/pikpak"
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/pkg/singleflight"
 )
 
 var taskCache = cache.NewMemCache(cache.WithShards[[]pikpak.OfflineTask](16))

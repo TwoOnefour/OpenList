@@ -20,11 +20,11 @@ echo "frontend version: $webVersion"
 
 ldflags="\
 -w -s \
--X 'github.com/alist-org/alist/v3/internal/conf.BuiltAt=$builtAt' \
--X 'github.com/alist-org/alist/v3/internal/conf.GitAuthor=$gitAuthor' \
--X 'github.com/alist-org/alist/v3/internal/conf.GitCommit=$gitCommit' \
--X 'github.com/alist-org/alist/v3/internal/conf.Version=$version' \
--X 'github.com/alist-org/alist/v3/internal/conf.WebVersion=$webVersion' \
+-X 'github.com/NodeSeekDev/nlist/v3/internal/conf.BuiltAt=$builtAt' \
+-X 'github.com/NodeSeekDev/nlist/v3/internal/conf.GitAuthor=$gitAuthor' \
+-X 'github.com/NodeSeekDev/nlist/v3/internal/conf.GitCommit=$gitCommit' \
+-X 'github.com/NodeSeekDev/nlist/v3/internal/conf.Version=$version' \
+-X 'github.com/NodeSeekDev/nlist/v3/internal/conf.WebVersion=$webVersion' \
 "
 
 FetchWebDev() {
@@ -36,7 +36,7 @@ FetchWebDev() {
 }
 
 FetchWebRelease() {
-  curl -L https://github.com/alist-org/alist-web/releases/latest/download/dist.tar.gz -o dist.tar.gz
+  curl -L https://github.com/NodeSeekDev/nlist-web/releases/latest/download/dist.tar.gz -o dist.tar.gz
   tar -zxvf dist.tar.gz
   rm -rf public/dist
   mv -f dist public
