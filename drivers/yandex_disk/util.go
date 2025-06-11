@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/alist-org/alist/v3/drivers/base"
-	"github.com/alist-org/alist/v3/internal/op"
+	"github.com/NodeSeekDev/nlist/v3/drivers/base"
+	"github.com/NodeSeekDev/nlist/v3/internal/op"
 	"github.com/go-resty/resty/v2"
 )
 

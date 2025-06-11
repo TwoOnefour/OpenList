@@ -4,13 +4,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/internal/sign"
-	"github.com/alist-org/alist/v3/pkg/utils/random"
-	"github.com/alist-org/alist/v3/server/common"
-	"github.com/alist-org/alist/v3/server/static"
+	"github.com/NodeSeekDev/nlist/v3/internal/conf"
+	"github.com/NodeSeekDev/nlist/v3/internal/model"
+	"github.com/NodeSeekDev/nlist/v3/internal/op"
+	"github.com/NodeSeekDev/nlist/v3/internal/sign"
+	"github.com/NodeSeekDev/nlist/v3/pkg/utils/random"
+	"github.com/NodeSeekDev/nlist/v3/server/common"
+	"github.com/NodeSeekDev/nlist/v3/server/static"
 	"github.com/gin-gonic/gin"
 )
 

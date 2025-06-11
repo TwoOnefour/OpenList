@@ -1,7 +1,7 @@
 package bootstrap
 
 import (
-	"github.com/alist-org/alist/v3/internal/search"
+	"github.com/NodeSeekDev/nlist/v3/internal/search"
 	log "github.com/sirupsen/logrus"
 )
 

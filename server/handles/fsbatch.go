@@ -5,12 +5,12 @@ import (
 	"regexp"
 	"slices"
 
-	"github.com/alist-org/alist/v3/internal/errs"
-	"github.com/alist-org/alist/v3/internal/fs"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/op"
-	"github.com/alist-org/alist/v3/pkg/generic"
-	"github.com/alist-org/alist/v3/server/common"
+	"github.com/NodeSeekDev/nlist/v3/internal/errs"
+	"github.com/NodeSeekDev/nlist/v3/internal/fs"
+	"github.com/NodeSeekDev/nlist/v3/internal/model"
+	"github.com/NodeSeekDev/nlist/v3/internal/op"
+	"github.com/NodeSeekDev/nlist/v3/pkg/generic"
+	"github.com/NodeSeekDev/nlist/v3/server/common"
 	"github.com/gin-gonic/gin"
 	"github.com/pkg/errors"
 )

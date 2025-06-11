@@ -4,9 +4,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/internal/setting"
-	"github.com/alist-org/alist/v3/pkg/sign"
+	"github.com/NodeSeekDev/nlist/v3/internal/conf"
+	"github.com/NodeSeekDev/nlist/v3/internal/setting"
+	"github.com/NodeSeekDev/nlist/v3/pkg/sign"
 )
 
 var onceArchive sync.Once

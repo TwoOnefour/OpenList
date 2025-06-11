@@ -1,7 +1,7 @@
 package tool
 
 import (
-	"github.com/alist-org/alist/v3/internal/errs"
+	"github.com/NodeSeekDev/nlist/v3/internal/errs"
 )
 
 var (

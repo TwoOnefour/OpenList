@@ -11,12 +11,12 @@ import (
 
 	"golang.org/x/time/rate"
 
-	"github.com/alist-org/alist/v3/drivers/base"
-	"github.com/alist-org/alist/v3/internal/driver"
-	"github.com/alist-org/alist/v3/internal/errs"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/internal/stream"
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"github.com/NodeSeekDev/nlist/v3/drivers/base"
+	"github.com/NodeSeekDev/nlist/v3/internal/driver"
+	"github.com/NodeSeekDev/nlist/v3/internal/errs"
+	"github.com/NodeSeekDev/nlist/v3/internal/model"
+	"github.com/NodeSeekDev/nlist/v3/internal/stream"
+	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/aws/session"

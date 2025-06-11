@@ -1,7 +1,7 @@
 package dropbox
 
 import (
-	"github.com/alist-org/alist/v3/internal/model"
+	"github.com/NodeSeekDev/nlist/v3/internal/model"
 	"time"
 )
 

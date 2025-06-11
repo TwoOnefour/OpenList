@@ -9,10 +9,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/alist-org/alist/v3/internal/conf"
-	"github.com/alist-org/alist/v3/internal/setting"
-	"github.com/alist-org/alist/v3/pkg/utils"
-	"github.com/alist-org/alist/v3/public"
+	"github.com/NodeSeekDev/nlist/v3/internal/conf"
+	"github.com/NodeSeekDev/nlist/v3/internal/setting"
+	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
+	"github.com/NodeSeekDev/nlist/v3/public"
 	"github.com/gin-gonic/gin"
 )
 

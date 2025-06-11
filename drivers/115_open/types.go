@@ -3,8 +3,8 @@ package _115_open
 import (
 	"time"
 
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"github.com/NodeSeekDev/nlist/v3/internal/model"
+	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
 	sdk "github.com/xhofe/115-sdk-go"
 )
 

@@ -3,7 +3,7 @@ package mega
 import (
 	"context"
 	"fmt"
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
 	"github.com/t3rm1n4l/go-mega"
 	"io"
 	"sync"

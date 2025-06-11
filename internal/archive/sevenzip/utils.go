@@ -2,9 +2,9 @@ package sevenzip
 
 import (
 	"errors"
-	"github.com/alist-org/alist/v3/internal/archive/tool"
-	"github.com/alist-org/alist/v3/internal/errs"
-	"github.com/alist-org/alist/v3/internal/stream"
+	"github.com/NodeSeekDev/nlist/v3/internal/archive/tool"
+	"github.com/NodeSeekDev/nlist/v3/internal/errs"
+	"github.com/NodeSeekDev/nlist/v3/internal/stream"
 	"github.com/bodgit/sevenzip"
 	"io"
 	"io/fs"

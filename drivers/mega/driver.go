@@ -7,14 +7,14 @@ import (
 	"io"
 	"time"
 
-	"github.com/alist-org/alist/v3/pkg/http_range"
+	"github.com/NodeSeekDev/nlist/v3/pkg/http_range"
 	"github.com/pquerna/otp/totp"
 	"github.com/rclone/rclone/lib/readers"
 
-	"github.com/alist-org/alist/v3/internal/driver"
-	"github.com/alist-org/alist/v3/internal/errs"
-	"github.com/alist-org/alist/v3/internal/model"
-	"github.com/alist-org/alist/v3/pkg/utils"
+	"github.com/NodeSeekDev/nlist/v3/internal/driver"
+	"github.com/NodeSeekDev/nlist/v3/internal/errs"
+	"github.com/NodeSeekDev/nlist/v3/internal/model"
+	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
 	log "github.com/sirupsen/logrus"
 	"github.com/t3rm1n4l/go-mega"
 )

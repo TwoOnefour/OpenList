@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/alist-org/alist/v3/cmd/flags"
-	_ "github.com/alist-org/alist/v3/drivers"
-	_ "github.com/alist-org/alist/v3/internal/archive"
-	_ "github.com/alist-org/alist/v3/internal/offline_download"
+	"github.com/NodeSeekDev/nlist/v3/cmd/flags"
+	_ "github.com/NodeSeekDev/nlist/v3/drivers"
+	_ "github.com/NodeSeekDev/nlist/v3/internal/archive"
+	_ "github.com/NodeSeekDev/nlist/v3/internal/offline_download"
 	"github.com/spf13/cobra"
 )
 
