@@ -37,7 +37,7 @@ jobs:
       - name: Checkout alist-web
         uses: actions/checkout@v4
         with:
-          repository: 'alist-org/alist-web'
+          repository: 'NodeSeekDev/nlist-web'
           ref: main
           persist-credentials: false
           fetch-depth: 0
@@ -68,4 +68,4 @@ jobs:
           github_token: ${{ secrets.MY_TOKEN }}
           branch: main
           directory: alist-web
-          repository: alist-org/alist-web
+          repository: NodeSeekDev/nlist-web
