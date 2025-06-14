@@ -9,12 +9,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/cmd/flags"
-	"github.com/NodeSeekDev/nlist/v3/drivers/base"
-	"github.com/NodeSeekDev/nlist/v3/internal/driver"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/internal/op"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
+	"github.com/OpenListTeam/OpenList/cmd/flags"
+	"github.com/OpenListTeam/OpenList/drivers/base"
+	"github.com/OpenListTeam/OpenList/internal/driver"
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/op"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
 	sdk "github.com/xhofe/115-sdk-go"
 	"golang.org/x/time/rate"
 )

@@ -2,10 +2,11 @@ package kodbox
 
 import (
 	"fmt"
-	"github.com/NodeSeekDev/nlist/v3/drivers/base"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
-	"github.com/go-resty/resty/v2"
 	"strings"
+
+	"github.com/OpenListTeam/OpenList/drivers/base"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
+	"github.com/go-resty/resty/v2"
 )
 
 func (d *KodBox) getToken() error {

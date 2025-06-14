@@ -1,8 +1,8 @@
 package data
 
 import (
-	"github.com/NodeSeekDev/nlist/v3/internal/db"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/db"
+	"github.com/OpenListTeam/OpenList/internal/model"
 )
 
 var initialTaskItems []model.TaskItem

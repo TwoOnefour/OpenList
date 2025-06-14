@@ -1,7 +1,7 @@
 package _115
 
 import (
-	"github.com/NodeSeekDev/nlist/v3/drivers/base"
+	"github.com/OpenListTeam/OpenList/drivers/base"
 	driver115 "github.com/SheltonZhu/115driver/pkg/driver"
 	log "github.com/sirupsen/logrus"
 )

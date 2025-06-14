@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
 	"github.com/go-resty/resty/v2"
 )
 

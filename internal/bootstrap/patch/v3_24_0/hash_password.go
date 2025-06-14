@@ -1,9 +1,9 @@
 package v3_24_0
 
 import (
-	"github.com/NodeSeekDev/nlist/v3/internal/db"
-	"github.com/NodeSeekDev/nlist/v3/internal/op"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
+	"github.com/OpenListTeam/OpenList/internal/db"
+	"github.com/OpenListTeam/OpenList/internal/op"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
 )
 
 // HashPwdForOldVersion encode passwords using SHA256

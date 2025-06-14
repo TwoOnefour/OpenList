@@ -12,7 +12,7 @@ import (
 	"io"
 	"iter"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/errs"
+	"github.com/OpenListTeam/OpenList/internal/errs"
 	log "github.com/sirupsen/logrus"
 )
 

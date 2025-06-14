@@ -7,8 +7,8 @@ import (
 	stdpath "path"
 	"strings"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/internal/stream"
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/stream"
 )
 
 type SubFile interface {

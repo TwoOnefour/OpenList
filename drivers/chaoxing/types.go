@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/model"
 )
 
 type Resp struct {

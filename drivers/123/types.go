@@ -1,14 +1,15 @@
 package _123
 
 import (
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
 	"net/url"
 	"path"
 	"strconv"
 	"strings"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
+
+	"github.com/OpenListTeam/OpenList/internal/model"
 )
 
 type File struct {

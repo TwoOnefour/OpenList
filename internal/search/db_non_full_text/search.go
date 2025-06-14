@@ -3,9 +3,9 @@ package db_non_full_text
 import (
 	"context"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/db"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/internal/search/searcher"
+	"github.com/OpenListTeam/OpenList/internal/db"
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/search/searcher"
 )
 
 type DB struct{}

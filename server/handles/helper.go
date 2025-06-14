@@ -5,10 +5,10 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/conf"
-	"github.com/NodeSeekDev/nlist/v3/internal/setting"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
-	"github.com/NodeSeekDev/nlist/v3/server/common"
+	"github.com/OpenListTeam/OpenList/internal/conf"
+	"github.com/OpenListTeam/OpenList/internal/setting"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
+	"github.com/OpenListTeam/OpenList/server/common"
 	"github.com/gin-gonic/gin"
 )
 

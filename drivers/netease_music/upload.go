@@ -4,14 +4,15 @@ import (
 	"context"
 	"crypto/md5"
 	"encoding/hex"
-	"github.com/NodeSeekDev/nlist/v3/internal/driver"
 	"io"
 	"net/http"
 	"strconv"
 	"strings"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
+	"github.com/OpenListTeam/OpenList/internal/driver"
+
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
 	"github.com/dhowden/tag"
 )
 

@@ -1,10 +1,9 @@
-module github.com/NodeSeekDev/nlist/v3
+module github.com/OpenListTeam/OpenList
 
 go 1.23.4
 
 require (
-	github.com/KirCute/ftpserverlib-pasvportmap v1.25.0
-	github.com/KirCute/sftpd-alist v0.0.12
+	github.com/OpenListTeam/sftpd-openlist v1.0.1
 	github.com/ProtonMail/go-crypto v1.0.0
 	github.com/SheltonZhu/115driver v1.0.34
 	github.com/Xhofe/go-cache v0.0.0-20240804043513-b1a71927bc21
@@ -54,7 +53,7 @@ require (
 	github.com/rclone/rclone v1.67.0
 	github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d
 	github.com/sirupsen/logrus v1.9.3
-	github.com/spf13/afero v1.11.0
+	github.com/spf13/afero v1.14.0
 	github.com/spf13/cobra v1.8.1
 	github.com/stretchr/testify v1.10.0
 	github.com/t3rm1n4l/go-mega v0.0.0-20240219080617-d494b6a8ace7
@@ -83,6 +82,7 @@ require (
 	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.17.0 // indirect
 	github.com/Azure/azure-sdk-for-go/sdk/internal v1.10.0 // indirect
 	github.com/Azure/azure-sdk-for-go/sdk/storage/azblob v1.6.0 // indirect
+	github.com/fclairamb/ftpserverlib v0.26.1-0.20250611192536-99cb646d0bbe // indirect
 )
 
 require (
@@ -101,7 +101,7 @@ require (
 	github.com/cloudwego/iasm v0.2.0 // indirect
 	github.com/dsnet/compress v0.0.2-0.20230904184137-39efe44ab707 // indirect
 	github.com/erikgeiser/coninput v0.0.0-20211004153227-1c3628e74d0f // indirect
-	github.com/fclairamb/go-log v0.5.0 // indirect
+	github.com/fclairamb/go-log v0.6.0 // indirect
 	github.com/gorilla/css v1.0.1 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
 	github.com/hashicorp/golang-lru/v2 v2.0.7 // indirect
@@ -198,7 +198,7 @@ require (
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
 	github.com/lufia/plan9stats v0.0.0-20231016141302-07b5767bb0ed // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
-	github.com/mattn/go-colorable v0.1.13 // indirect
+	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-localereader v0.0.1 // indirect
 	github.com/mattn/go-runewidth v0.0.16 // indirect
@@ -253,8 +253,8 @@ require (
 	go.etcd.io/bbolt v1.3.8 // indirect
 	golang.org/x/arch v0.8.0 // indirect
 	golang.org/x/sync v0.12.0
-	golang.org/x/sys v0.31.0 // indirect
-	golang.org/x/term v0.30.0 // indirect
+	golang.org/x/sys v0.33.0 // indirect
+	golang.org/x/term v0.32.0 // indirect
 	golang.org/x/text v0.23.0
 	golang.org/x/tools v0.24.0 // indirect
 	google.golang.org/api v0.169.0 // indirect

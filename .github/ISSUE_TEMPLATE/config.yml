@@ -1,5 +1,5 @@
-blank_issues_enabled: false
+blank_issues_enabled: true
 contact_links:
   - name: Questions & Discussions
-    url: https://github.com/NodeSeekDev/nlist/discussions
+    url: https://github.com/OpenListTeam/OpenList/discussions
     about: Use GitHub discussions for message-board style questions and discussions.

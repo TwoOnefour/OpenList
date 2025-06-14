@@ -3,15 +3,16 @@ package pikpak
 import (
 	"context"
 	"fmt"
-	"github.com/NodeSeekDev/nlist/v3/internal/conf"
-	"github.com/NodeSeekDev/nlist/v3/internal/setting"
 	"strconv"
 
-	"github.com/NodeSeekDev/nlist/v3/drivers/pikpak"
-	"github.com/NodeSeekDev/nlist/v3/internal/errs"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/internal/offline_download/tool"
-	"github.com/NodeSeekDev/nlist/v3/internal/op"
+	"github.com/OpenListTeam/OpenList/internal/conf"
+	"github.com/OpenListTeam/OpenList/internal/setting"
+
+	"github.com/OpenListTeam/OpenList/drivers/pikpak"
+	"github.com/OpenListTeam/OpenList/internal/errs"
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/offline_download/tool"
+	"github.com/OpenListTeam/OpenList/internal/op"
 )
 
 type PikPak struct {

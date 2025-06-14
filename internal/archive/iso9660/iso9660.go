@@ -1,14 +1,15 @@
 package iso9660
 
 import (
-	"github.com/NodeSeekDev/nlist/v3/internal/archive/tool"
-	"github.com/NodeSeekDev/nlist/v3/internal/errs"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/internal/stream"
-	"github.com/kdomanski/iso9660"
 	"io"
 	"os"
 	stdpath "path"
+
+	"github.com/OpenListTeam/OpenList/internal/archive/tool"
+	"github.com/OpenListTeam/OpenList/internal/errs"
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/stream"
+	"github.com/kdomanski/iso9660"
 )
 
 type ISO9660 struct {

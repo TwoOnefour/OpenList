@@ -3,10 +3,11 @@ package bootstrap
 import (
 	"fmt"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/bootstrap/patch"
-	"github.com/NodeSeekDev/nlist/v3/internal/conf"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
 	"strings"
+
+	"github.com/OpenListTeam/OpenList/internal/bootstrap/patch"
+	"github.com/OpenListTeam/OpenList/internal/conf"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
 )
 
 var LastLaunchedVersion = ""

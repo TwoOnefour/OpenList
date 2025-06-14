@@ -5,9 +5,9 @@ import (
 	"path"
 	"strings"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/conf"
-	"github.com/NodeSeekDev/nlist/v3/server/common"
-	"github.com/NodeSeekDev/nlist/v3/server/s3"
+	"github.com/OpenListTeam/OpenList/internal/conf"
+	"github.com/OpenListTeam/OpenList/server/common"
+	"github.com/OpenListTeam/OpenList/server/s3"
 	"github.com/gin-gonic/gin"
 )
 

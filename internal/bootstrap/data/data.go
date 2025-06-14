@@ -1,6 +1,6 @@
 package data
 
-import "github.com/NodeSeekDev/nlist/v3/cmd/flags"
+import "github.com/OpenListTeam/OpenList/cmd/flags"
 
 func InitData() {
 	initUser()

@@ -1,9 +1,9 @@
 package patch
 
 import (
-	"github.com/NodeSeekDev/nlist/v3/internal/bootstrap/patch/v3_24_0"
-	"github.com/NodeSeekDev/nlist/v3/internal/bootstrap/patch/v3_32_0"
-	"github.com/NodeSeekDev/nlist/v3/internal/bootstrap/patch/v3_41_0"
+	"github.com/OpenListTeam/OpenList/internal/bootstrap/patch/v3_24_0"
+	"github.com/OpenListTeam/OpenList/internal/bootstrap/patch/v3_32_0"
+	"github.com/OpenListTeam/OpenList/internal/bootstrap/patch/v3_41_0"
 )
 
 type VersionPatches struct {

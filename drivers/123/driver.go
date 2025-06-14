@@ -11,12 +11,12 @@ import (
 
 	"golang.org/x/time/rate"
 
-	"github.com/NodeSeekDev/nlist/v3/drivers/base"
-	"github.com/NodeSeekDev/nlist/v3/internal/driver"
-	"github.com/NodeSeekDev/nlist/v3/internal/errs"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/internal/stream"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
+	"github.com/OpenListTeam/OpenList/drivers/base"
+	"github.com/OpenListTeam/OpenList/internal/driver"
+	"github.com/OpenListTeam/OpenList/internal/errs"
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/stream"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/aws/session"

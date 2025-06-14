@@ -1,8 +1,9 @@
 package github
 
 import (
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
 	"time"
+
+	"github.com/OpenListTeam/OpenList/internal/model"
 )
 
 type Links struct {

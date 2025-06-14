@@ -4,9 +4,9 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/conf"
+	"github.com/OpenListTeam/OpenList/internal/conf"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/driver"
+	"github.com/OpenListTeam/OpenList/internal/driver"
 	"github.com/pkg/errors"
 )
 

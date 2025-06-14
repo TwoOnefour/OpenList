@@ -3,15 +3,16 @@ package quark_uc_tv
 import (
 	"context"
 	"fmt"
-	"github.com/NodeSeekDev/nlist/v3/internal/op"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
-	"github.com/go-resty/resty/v2"
 	"strconv"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/driver"
-	"github.com/NodeSeekDev/nlist/v3/internal/errs"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/op"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
+	"github.com/go-resty/resty/v2"
+
+	"github.com/OpenListTeam/OpenList/internal/driver"
+	"github.com/OpenListTeam/OpenList/internal/errs"
+	"github.com/OpenListTeam/OpenList/internal/model"
 )
 
 type QuarkUCTV struct {

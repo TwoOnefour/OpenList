@@ -9,10 +9,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/conf"
-	"github.com/NodeSeekDev/nlist/v3/internal/setting"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
-	"github.com/NodeSeekDev/nlist/v3/public"
+	"github.com/OpenListTeam/OpenList/internal/conf"
+	"github.com/OpenListTeam/OpenList/internal/setting"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
+	"github.com/OpenListTeam/OpenList/public"
 	"github.com/gin-gonic/gin"
 )
 
@@ -65,7 +65,7 @@ func UpdateIndex() {
 	mainColor := setting.GetStr(conf.MainColor)
 	conf.ManageHtml = conf.RawIndexHtml
 	replaceMap1 := map[string]string{
-		"https://cdn.jsdelivr.net/gh/alist-org/logo@main/logo.svg": favicon,
+		"https://cdn.statically.io/gh/OpenListTeam/Logo/main/OpenList.svg": favicon,
 		"Loading...":            title,
 		"main_color: undefined": fmt.Sprintf("main_color: '%s'", mainColor),
 	}

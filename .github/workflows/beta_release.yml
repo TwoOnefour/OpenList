@@ -41,15 +41,22 @@ jobs:
         run: |
           git tag -l
           npx changelogithub --output CHANGELOG.md
-#          npx changelogen@latest --output CHANGELOG.md
 
-      - name: Upload assets
+      - name: Upload assets to beta release
         uses: softprops/action-gh-release@v2
         with:
-          body_path: CHANGELOG.md
+          body: "See CHANGELOG.md"
           files: CHANGELOG.md
           prerelease: true
           tag_name: beta
+
+      - name: Upload assets to github artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: beta changelog
+          path: ${{ github.workspace }}/CHANGELOG.md
+          compression-level: 0
+          if-no-files-found: error # 'warn' or 'ignore' are also available, defaults to `warn`
 
   release:
     needs:
@@ -87,52 +94,75 @@ jobs:
         run: bash build.sh dev web
 
       - name: Build
-        uses: go-cross/cgo-actions@v1
+        uses: OpenListTeam/cgo-actions@v1.1.1
         with:
           targets: ${{ matrix.target }}
           musl-target-format: $os-$musl-$arch
           out-dir: build
+          output: openlist-$target$ext
+          musl-base-url: "https://github.com/OpenListTeam/musl-compilers/releases/latest/download/"
           x-flags: |
-            github.com/NodeSeekDev/nlist/v3/internal/conf.BuiltAt=$built_at
-            github.com/NodeSeekDev/nlist/v3/internal/conf.GitAuthor=Xhofe
-            github.com/NodeSeekDev/nlist/v3/internal/conf.GitCommit=$git_commit
-            github.com/NodeSeekDev/nlist/v3/internal/conf.Version=$tag
-            github.com/NodeSeekDev/nlist/v3/internal/conf.WebVersion=dev
+            github.com/OpenListTeam/OpenList/internal/conf.BuiltAt=$built_at
+            github.com/OpenListTeam/OpenList/internal/conf.GitAuthor=OpenList
+            github.com/OpenListTeam/OpenList/internal/conf.GitCommit=$git_commit
+            github.com/OpenListTeam/OpenList/internal/conf.Version=$tag
+            github.com/OpenListTeam/OpenList/internal/conf.WebVersion=dev
 
       - name: Compress
         run: |
           bash build.sh zip ${{ matrix.hash }}
-          
-      - name: Upload assets
+
+      # See above           
+      - name: Upload assets to beta release
         uses: softprops/action-gh-release@v2
         with:
           files: build/compress/*
           prerelease: true
           tag_name: beta
-          
-  desktop:
-    needs:
-      - release
-    name: Beta Release Desktop
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-        with:
-          repository: alist-org/desktop-release
-          ref: main
-          persist-credentials: false
-          fetch-depth: 0
 
-      - name: Commit
+      - name: Clean illegal characters from matrix.target
+        id: clean_target_name
         run: |
-          git config --local user.email "bot@nn.ci"
-          git config --local user.name "IlaBot"
-          git commit --allow-empty -m "Trigger build for ${{ github.sha }}"
+          ILLEGAL_CHARS_REGEX='[":<>|*?\\/\r\n]'
+          CLEANED_TARGET=$(echo "${{ matrix.target }}" | sed -E "s/$ILLEGAL_CHARS_REGEX//g")
+          echo "Original target: ${{ matrix.target }}"
+          echo "Cleaned target: $CLEANED_TARGET"
+          echo "cleaned_target=$CLEANED_TARGET" >> $GITHUB_ENV
 
-      - name: Push commit
-        uses: ad-m/github-push-action@master
+      - name: Upload assets to github artifact
+        uses: actions/upload-artifact@v4
         with:
-          github_token: ${{ secrets.MY_TOKEN }}
-          branch: main
-          repository: alist-org/desktop-release
+          name: beta builds for ${{ env.cleaned_target }}
+          path: ${{ github.workspace }}/build/compress/*
+          compression-level: 0
+          if-no-files-found: error # 'warn' or 'ignore' are also available, defaults to `warn`
+
+
+  # TODO: We do not have desktop clients right now. We may need a better way to 
+  # trigger the build of desktop client when we actually have it.        
+  # desktop:
+  #   needs:
+  #     - release
+  #   name: Beta Release Desktop
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout repo
+  #       uses: actions/checkout@v4
+  #       with:
+  #         repository: alist-org/desktop-release
+  #         ref: main
+  #         persist-credentials: false
+  #         fetch-depth: 0
+
+  #     - name: Commit
+  #       run: |
+  #         git config --local user.email "bot@nn.ci"
+  #         git config --local user.name "IlaBot"
+  #         git commit --allow-empty -m "Trigger build for ${{ github.sha }}"
+
+  #     - name: Push commit
+  #       uses: ad-m/github-push-action@master
+  #       with:
+  #         github_token: ${{ secrets.MY_TOKEN }}
+  #         branch: main
+  #         repository: alist-org/desktop-release

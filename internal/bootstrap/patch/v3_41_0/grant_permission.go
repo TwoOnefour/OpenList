@@ -1,8 +1,8 @@
 package v3_41_0
 
 import (
-	"github.com/NodeSeekDev/nlist/v3/internal/op"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
+	"github.com/OpenListTeam/OpenList/internal/op"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
 )
 
 // GrantAdminPermissions gives admin Permission 0(can see hidden) - 9(webdav manage) and

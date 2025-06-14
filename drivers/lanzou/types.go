@@ -3,9 +3,10 @@ package lanzou
 import (
 	"errors"
 	"fmt"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
 	"time"
+
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
 )
 
 var ErrFileShareCancel = errors.New("file sharing cancellation")

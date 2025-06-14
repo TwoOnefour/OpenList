@@ -2,14 +2,15 @@ package febbox
 
 import (
 	"context"
-	"github.com/NodeSeekDev/nlist/v3/internal/op"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
+
+	"github.com/OpenListTeam/OpenList/internal/op"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/clientcredentials"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/driver"
-	"github.com/NodeSeekDev/nlist/v3/internal/errs"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/driver"
+	"github.com/OpenListTeam/OpenList/internal/errs"
+	"github.com/OpenListTeam/OpenList/internal/model"
 )
 
 type FebBox struct {

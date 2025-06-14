@@ -3,7 +3,7 @@ package aliyundrive_share
 import (
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/model"
 )
 
 type ErrorResp struct {

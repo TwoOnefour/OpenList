@@ -3,7 +3,8 @@ package doubao_share
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
+
+	"github.com/OpenListTeam/OpenList/internal/model"
 )
 
 type BaseResp struct {

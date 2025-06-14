@@ -6,13 +6,14 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
 	"net/http"
 	"regexp"
 	"strings"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/drivers/base"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
+
+	"github.com/OpenListTeam/OpenList/drivers/base"
 	"github.com/go-resty/resty/v2"
 )
 

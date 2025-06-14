@@ -3,8 +3,8 @@ package handles
 import (
 	"fmt"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/op"
-	"github.com/NodeSeekDev/nlist/v3/server/common"
+	"github.com/OpenListTeam/OpenList/internal/op"
+	"github.com/OpenListTeam/OpenList/server/common"
 	"github.com/gin-gonic/gin"
 )
 

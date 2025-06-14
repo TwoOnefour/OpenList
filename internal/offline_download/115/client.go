@@ -3,14 +3,15 @@ package _115
 import (
 	"context"
 	"fmt"
-	"github.com/NodeSeekDev/nlist/v3/internal/conf"
-	"github.com/NodeSeekDev/nlist/v3/internal/setting"
 
-	"github.com/NodeSeekDev/nlist/v3/drivers/115"
-	"github.com/NodeSeekDev/nlist/v3/internal/errs"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/internal/offline_download/tool"
-	"github.com/NodeSeekDev/nlist/v3/internal/op"
+	"github.com/OpenListTeam/OpenList/internal/conf"
+	"github.com/OpenListTeam/OpenList/internal/setting"
+
+	_115 "github.com/OpenListTeam/OpenList/drivers/115"
+	"github.com/OpenListTeam/OpenList/internal/errs"
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/offline_download/tool"
+	"github.com/OpenListTeam/OpenList/internal/op"
 )
 
 type Cloud115 struct {

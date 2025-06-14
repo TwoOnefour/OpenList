@@ -1,16 +1,16 @@
 package server
 
 import (
-	"github.com/NodeSeekDev/nlist/v3/cmd/flags"
-	"github.com/NodeSeekDev/nlist/v3/internal/conf"
-	"github.com/NodeSeekDev/nlist/v3/internal/message"
-	"github.com/NodeSeekDev/nlist/v3/internal/sign"
-	"github.com/NodeSeekDev/nlist/v3/internal/stream"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
-	"github.com/NodeSeekDev/nlist/v3/server/common"
-	"github.com/NodeSeekDev/nlist/v3/server/handles"
-	"github.com/NodeSeekDev/nlist/v3/server/middlewares"
-	"github.com/NodeSeekDev/nlist/v3/server/static"
+	"github.com/OpenListTeam/OpenList/cmd/flags"
+	"github.com/OpenListTeam/OpenList/internal/conf"
+	"github.com/OpenListTeam/OpenList/internal/message"
+	"github.com/OpenListTeam/OpenList/internal/sign"
+	"github.com/OpenListTeam/OpenList/internal/stream"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
+	"github.com/OpenListTeam/OpenList/server/common"
+	"github.com/OpenListTeam/OpenList/server/handles"
+	"github.com/OpenListTeam/OpenList/server/middlewares"
+	"github.com/OpenListTeam/OpenList/server/static"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )

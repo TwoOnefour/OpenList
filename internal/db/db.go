@@ -3,8 +3,8 @@ package db
 import (
 	log "github.com/sirupsen/logrus"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/conf"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/conf"
+	"github.com/OpenListTeam/OpenList/internal/model"
 	"gorm.io/gorm"
 )
 

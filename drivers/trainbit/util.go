@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/drivers/base"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
+	"github.com/OpenListTeam/OpenList/drivers/base"
+	"github.com/OpenListTeam/OpenList/internal/model"
 )
 
 func get(url string, apiKey string, AUSHELLPORTAL string) (*http.Response, error) {

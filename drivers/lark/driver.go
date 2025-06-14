@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/driver"
-	"github.com/NodeSeekDev/nlist/v3/internal/errs"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/driver"
+	"github.com/OpenListTeam/OpenList/internal/errs"
+	"github.com/OpenListTeam/OpenList/internal/model"
 	lark "github.com/larksuite/oapi-sdk-go/v3"
 	larkcore "github.com/larksuite/oapi-sdk-go/v3/core"
 	larkdrive "github.com/larksuite/oapi-sdk-go/v3/service/drive/v1"

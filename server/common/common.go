@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/NodeSeekDev/nlist/v3/cmd/flags"
-	"github.com/NodeSeekDev/nlist/v3/internal/conf"
+	"github.com/OpenListTeam/OpenList/cmd/flags"
+	"github.com/OpenListTeam/OpenList/internal/conf"
 	"github.com/gin-gonic/gin"
 	log "github.com/sirupsen/logrus"
 )

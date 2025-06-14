@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/drivers/pikpak"
-	"github.com/NodeSeekDev/nlist/v3/internal/op"
-	"github.com/NodeSeekDev/nlist/v3/pkg/singleflight"
+	"github.com/OpenListTeam/OpenList/drivers/pikpak"
+	"github.com/OpenListTeam/OpenList/internal/op"
+	"github.com/OpenListTeam/OpenList/pkg/singleflight"
 	"github.com/Xhofe/go-cache"
 )
 

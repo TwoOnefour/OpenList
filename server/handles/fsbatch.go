@@ -5,12 +5,12 @@ import (
 	"regexp"
 	"slices"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/errs"
-	"github.com/NodeSeekDev/nlist/v3/internal/fs"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/internal/op"
-	"github.com/NodeSeekDev/nlist/v3/pkg/generic"
-	"github.com/NodeSeekDev/nlist/v3/server/common"
+	"github.com/OpenListTeam/OpenList/internal/errs"
+	"github.com/OpenListTeam/OpenList/internal/fs"
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/op"
+	"github.com/OpenListTeam/OpenList/pkg/generic"
+	"github.com/OpenListTeam/OpenList/server/common"
 	"github.com/gin-gonic/gin"
 	"github.com/pkg/errors"
 )

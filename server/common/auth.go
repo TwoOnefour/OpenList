@@ -3,8 +3,8 @@ package common
 import (
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/conf"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/conf"
+	"github.com/OpenListTeam/OpenList/internal/model"
 	"github.com/Xhofe/go-cache"
 	"github.com/golang-jwt/jwt/v4"
 	"github.com/pkg/errors"

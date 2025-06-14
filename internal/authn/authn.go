@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/conf"
-	"github.com/NodeSeekDev/nlist/v3/internal/setting"
-	"github.com/NodeSeekDev/nlist/v3/server/common"
+	"github.com/OpenListTeam/OpenList/internal/conf"
+	"github.com/OpenListTeam/OpenList/internal/setting"
+	"github.com/OpenListTeam/OpenList/server/common"
 	"github.com/go-webauthn/webauthn/webauthn"
 )
 

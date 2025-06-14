@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/NodeSeekDev/nlist/v3/drivers/base"
-	"github.com/NodeSeekDev/nlist/v3/internal/op"
+	"github.com/OpenListTeam/OpenList/drivers/base"
+	"github.com/OpenListTeam/OpenList/internal/op"
 	log "github.com/sirupsen/logrus"
 )
 

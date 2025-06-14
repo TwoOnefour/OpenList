@@ -7,11 +7,11 @@ import (
 	"path"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/driver"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/pkg/cron"
-	"github.com/NodeSeekDev/nlist/v3/pkg/gowebdav"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
+	"github.com/OpenListTeam/OpenList/internal/driver"
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/pkg/cron"
+	"github.com/OpenListTeam/OpenList/pkg/gowebdav"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
 )
 
 type WebDav struct {

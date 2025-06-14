@@ -3,8 +3,8 @@ package conf
 import (
 	"path/filepath"
 
-	"github.com/NodeSeekDev/nlist/v3/cmd/flags"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils/random"
+	"github.com/OpenListTeam/OpenList/cmd/flags"
+	"github.com/OpenListTeam/OpenList/pkg/utils/random"
 )
 
 type Database struct {

@@ -16,14 +16,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/stream"
+	"github.com/OpenListTeam/OpenList/internal/stream"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/errs"
-	"github.com/NodeSeekDev/nlist/v3/internal/fs"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/internal/sign"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
-	"github.com/NodeSeekDev/nlist/v3/server/common"
+	"github.com/OpenListTeam/OpenList/internal/errs"
+	"github.com/OpenListTeam/OpenList/internal/fs"
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/sign"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
+	"github.com/OpenListTeam/OpenList/server/common"
 )
 
 type Handler struct {

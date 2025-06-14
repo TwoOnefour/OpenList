@@ -1,7 +1,7 @@
 package tool
 
 import (
-	"github.com/NodeSeekDev/nlist/v3/internal/errs"
+	"github.com/OpenListTeam/OpenList/internal/errs"
 )
 
 var (

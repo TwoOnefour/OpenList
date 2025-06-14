@@ -2,18 +2,19 @@ package server
 
 import (
 	"context"
-	"github.com/KirCute/sftpd-alist"
-	"github.com/NodeSeekDev/nlist/v3/internal/conf"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/internal/op"
-	"github.com/NodeSeekDev/nlist/v3/internal/setting"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
-	"github.com/NodeSeekDev/nlist/v3/server/ftp"
-	"github.com/NodeSeekDev/nlist/v3/server/sftp"
-	"github.com/pkg/errors"
-	"golang.org/x/crypto/ssh"
 	"net/http"
 	"time"
+
+	"github.com/OpenListTeam/OpenList/internal/conf"
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/op"
+	"github.com/OpenListTeam/OpenList/internal/setting"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
+	"github.com/OpenListTeam/OpenList/server/ftp"
+	"github.com/OpenListTeam/OpenList/server/sftp"
+	"github.com/OpenListTeam/sftpd-openlist"
+	"github.com/pkg/errors"
+	"golang.org/x/crypto/ssh"
 )
 
 type SftpDriver struct {

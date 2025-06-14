@@ -17,11 +17,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/conf"
-	"github.com/NodeSeekDev/nlist/v3/internal/driver"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/pkg/http_range"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
+	"github.com/OpenListTeam/OpenList/internal/conf"
+	"github.com/OpenListTeam/OpenList/internal/driver"
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/pkg/http_range"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
 	"github.com/aliyun/aliyun-oss-go-sdk/oss"
 
 	cipher "github.com/SheltonZhu/115driver/pkg/crypto/ec115"

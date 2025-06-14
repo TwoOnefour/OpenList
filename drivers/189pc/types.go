@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
 )
 
 // 居然有四种返回方式

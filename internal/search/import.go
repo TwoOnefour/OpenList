@@ -1,8 +1,8 @@
 package search
 
 import (
-	_ "github.com/NodeSeekDev/nlist/v3/internal/search/bleve"
-	_ "github.com/NodeSeekDev/nlist/v3/internal/search/db"
-	_ "github.com/NodeSeekDev/nlist/v3/internal/search/db_non_full_text"
-	_ "github.com/NodeSeekDev/nlist/v3/internal/search/meilisearch"
+	_ "github.com/OpenListTeam/OpenList/internal/search/bleve"
+	_ "github.com/OpenListTeam/OpenList/internal/search/db"
+	_ "github.com/OpenListTeam/OpenList/internal/search/db_non_full_text"
+	_ "github.com/OpenListTeam/OpenList/internal/search/meilisearch"
 )

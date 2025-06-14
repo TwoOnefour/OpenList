@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/driver"
+	"github.com/OpenListTeam/OpenList/internal/driver"
 	"github.com/Xhofe/go-cache"
 )
 

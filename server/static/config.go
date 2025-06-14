@@ -3,8 +3,8 @@ package static
 import (
 	"strings"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/conf"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
+	"github.com/OpenListTeam/OpenList/internal/conf"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
 )
 
 type SiteConfig struct {

@@ -2,11 +2,12 @@ package task
 
 import (
 	"context"
-	"github.com/NodeSeekDev/nlist/v3/internal/conf"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/xhofe/tache"
 	"sync"
 	"time"
+
+	"github.com/OpenListTeam/OpenList/internal/conf"
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/xhofe/tache"
 )
 
 type TaskExtension struct {

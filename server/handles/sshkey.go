@@ -1,12 +1,13 @@
 package handles
 
 import (
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/internal/op"
-	"github.com/NodeSeekDev/nlist/v3/server/common"
-	"github.com/gin-gonic/gin"
 	"strconv"
 	"strings"
+
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/op"
+	"github.com/OpenListTeam/OpenList/server/common"
+	"github.com/gin-gonic/gin"
 )
 
 type SSHKeyAddReq struct {

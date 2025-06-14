@@ -8,13 +8,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/driver"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/internal/sign"
-	"github.com/NodeSeekDev/nlist/v3/pkg/http_range"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils/random"
-	"github.com/NodeSeekDev/nlist/v3/server/common"
+	"github.com/OpenListTeam/OpenList/internal/driver"
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/sign"
+	"github.com/OpenListTeam/OpenList/pkg/http_range"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
+	"github.com/OpenListTeam/OpenList/pkg/utils/random"
+	"github.com/OpenListTeam/OpenList/server/common"
 )
 
 type HostsResp struct {

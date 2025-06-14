@@ -2,12 +2,13 @@ package stream
 
 import (
 	"context"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/pkg/http_range"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
-	"golang.org/x/time/rate"
 	"io"
 	"time"
+
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/pkg/http_range"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
+	"golang.org/x/time/rate"
 )
 
 type Limiter interface {

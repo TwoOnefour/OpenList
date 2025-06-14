@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/drivers/base"
+	"github.com/OpenListTeam/OpenList/drivers/base"
 	"golang.org/x/net/publicsuffix"
 )
 

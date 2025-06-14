@@ -6,9 +6,9 @@ import (
 	"image/png"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/internal/op"
-	"github.com/NodeSeekDev/nlist/v3/server/common"
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/op"
+	"github.com/OpenListTeam/OpenList/server/common"
 	"github.com/Xhofe/go-cache"
 	"github.com/gin-gonic/gin"
 	"github.com/pquerna/otp/totp"

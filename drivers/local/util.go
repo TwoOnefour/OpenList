@@ -11,9 +11,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/conf"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
+	"github.com/OpenListTeam/OpenList/internal/conf"
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
 	"github.com/disintegration/imaging"
 	ffmpeg "github.com/u2takey/ffmpeg-go"
 )

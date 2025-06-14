@@ -3,7 +3,7 @@ package yandex_disk
 import (
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/model"
 )
 
 type TokenErrResp struct {

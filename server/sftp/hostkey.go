@@ -6,11 +6,12 @@ import (
 	"crypto/x509"
 	"encoding/pem"
 	"fmt"
-	"github.com/NodeSeekDev/nlist/v3/cmd/flags"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
-	"golang.org/x/crypto/ssh"
 	"os"
 	"path/filepath"
+
+	"github.com/OpenListTeam/OpenList/cmd/flags"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
+	"golang.org/x/crypto/ssh"
 )
 
 var SSHSigners []ssh.Signer

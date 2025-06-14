@@ -6,9 +6,9 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/conf"
-	"github.com/NodeSeekDev/nlist/v3/internal/db"
-	"github.com/NodeSeekDev/nlist/v3/internal/search/searcher"
+	"github.com/OpenListTeam/OpenList/internal/conf"
+	"github.com/OpenListTeam/OpenList/internal/db"
+	"github.com/OpenListTeam/OpenList/internal/search/searcher"
 )
 
 var config = searcher.Config{

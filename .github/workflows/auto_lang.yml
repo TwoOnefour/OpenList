@@ -1,14 +1,15 @@
 name: auto_lang
 
 on:
-  push:
-    branches:
-      - 'main'
-    paths:
-      - 'drivers/**'
-      - 'internal/bootstrap/data/setting.go'
-      - 'internal/conf/const.go'
-      - 'cmd/lang.go'
+  # Disable translation generation, enable it after everything is setup.
+  # push:
+  #   branches:
+  #     - 'main'
+  #   paths:
+  #     - 'drivers/**'
+  #     - 'internal/bootstrap/data/setting.go'
+  #     - 'internal/conf/const.go'
+  #     - 'cmd/lang.go'
   workflow_dispatch:
 
 concurrency:

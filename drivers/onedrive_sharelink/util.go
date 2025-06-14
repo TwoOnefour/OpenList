@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/drivers/base"
-	"github.com/NodeSeekDev/nlist/v3/internal/conf"
+	"github.com/OpenListTeam/OpenList/drivers/base"
+	"github.com/OpenListTeam/OpenList/internal/conf"
 	log "github.com/sirupsen/logrus"
 	"golang.org/x/net/html"
 )

@@ -1,9 +1,10 @@
 package quark_uc_tv
 
 import (
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
 	"time"
+
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
 )
 
 type Resp struct {

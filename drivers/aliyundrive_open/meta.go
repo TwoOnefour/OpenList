@@ -1,8 +1,8 @@
 package aliyundrive_open
 
 import (
-	"github.com/NodeSeekDev/nlist/v3/internal/driver"
-	"github.com/NodeSeekDev/nlist/v3/internal/op"
+	"github.com/OpenListTeam/OpenList/internal/driver"
+	"github.com/OpenListTeam/OpenList/internal/op"
 )
 
 type Addition struct {
@@ -11,7 +11,7 @@ type Addition struct {
 	RefreshToken       string `json:"refresh_token" required:"true"`
 	OrderBy            string `json:"order_by" type:"select" options:"name,size,updated_at,created_at"`
 	OrderDirection     string `json:"order_direction" type:"select" options:"ASC,DESC"`
-	OauthTokenURL      string `json:"oauth_token_url" default:"https://api.nn.ci/alist/ali_open/token"`
+	OauthTokenURL      string `json:"oauth_token_url" default:"https://example.com/alist/ali_open/token"` // TODO: Replace this with a community hosted api endpoint
 	ClientID           string `json:"client_id" required:"false" help:"Keep it empty if you don't have one"`
 	ClientSecret       string `json:"client_secret" required:"false" help:"Keep it empty if you don't have one"`
 	RemoveWay          string `json:"remove_way" required:"true" type:"select" options:"trash,delete"`

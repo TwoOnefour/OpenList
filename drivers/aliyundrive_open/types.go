@@ -1,10 +1,11 @@
 package aliyundrive_open
 
 import (
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
+
+	"github.com/OpenListTeam/OpenList/internal/model"
 )
 
 type ErrResp struct {

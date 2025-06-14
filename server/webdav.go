@@ -3,17 +3,18 @@ package server
 import (
 	"context"
 	"crypto/subtle"
-	"github.com/NodeSeekDev/nlist/v3/internal/stream"
-	"github.com/NodeSeekDev/nlist/v3/server/middlewares"
 	"net/http"
 	"path"
 	"strings"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/conf"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/internal/op"
-	"github.com/NodeSeekDev/nlist/v3/internal/setting"
-	"github.com/NodeSeekDev/nlist/v3/server/webdav"
+	"github.com/OpenListTeam/OpenList/internal/stream"
+	"github.com/OpenListTeam/OpenList/server/middlewares"
+
+	"github.com/OpenListTeam/OpenList/internal/conf"
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/op"
+	"github.com/OpenListTeam/OpenList/internal/setting"
+	"github.com/OpenListTeam/OpenList/server/webdav"
 	"github.com/gin-gonic/gin"
 	log "github.com/sirupsen/logrus"
 )

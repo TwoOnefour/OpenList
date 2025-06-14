@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
 	driver115 "github.com/SheltonZhu/115driver/pkg/driver"
 	"github.com/pkg/errors"
 )

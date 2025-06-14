@@ -5,7 +5,7 @@ package s3
 import (
 	"fmt"
 
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
 	"github.com/alist-org/gofakes3"
 )
 

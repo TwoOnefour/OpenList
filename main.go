@@ -1,6 +1,6 @@
 package main
 
-import "github.com/NodeSeekDev/nlist/v3/cmd"
+import "github.com/OpenListTeam/OpenList/cmd"
 
 func main() {
 	cmd.Execute()

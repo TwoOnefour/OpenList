@@ -2,9 +2,10 @@ package driver
 
 import (
 	"context"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/internal/stream"
 	"io"
+
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/stream"
 )
 
 type UpdateProgress = model.UpdateProgress

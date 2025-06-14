@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/errs"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils/random"
+	"github.com/OpenListTeam/OpenList/internal/errs"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
+	"github.com/OpenListTeam/OpenList/pkg/utils/random"
 	"github.com/go-webauthn/webauthn/webauthn"
 	"github.com/pkg/errors"
 )
@@ -19,7 +19,7 @@ const (
 	ADMIN
 )
 
-const StaticHashSalt = "https://github.com/NodeSeekDev/nlist"
+const StaticHashSalt = "https://github.com/alist-org/alist"
 
 type User struct {
 	ID       uint   `json:"id" gorm:"primaryKey"`                      // unique key
@@ -177,5 +177,5 @@ func (u *User) WebAuthnCredentials() []webauthn.Credential {
 }
 
 func (u *User) WebAuthnIcon() string {
-	return "https://alist.nn.ci/logo.svg"
+	return "https://cdn.statically.io/gh/OpenListTeam/Logo/main/OpenList.svg"
 }

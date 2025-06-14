@@ -12,12 +12,12 @@ import (
 
 	"golang.org/x/sync/semaphore"
 
-	"github.com/NodeSeekDev/nlist/v3/drivers/base"
-	"github.com/NodeSeekDev/nlist/v3/internal/driver"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/internal/op"
-	"github.com/NodeSeekDev/nlist/v3/pkg/errgroup"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
+	"github.com/OpenListTeam/OpenList/drivers/base"
+	"github.com/OpenListTeam/OpenList/internal/driver"
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/op"
+	"github.com/OpenListTeam/OpenList/pkg/errgroup"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
 	"github.com/avast/retry-go"
 	"github.com/foxxorcat/mopan-sdk-go"
 	log "github.com/sirupsen/logrus"

@@ -10,14 +10,14 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/drivers/base"
-	"github.com/NodeSeekDev/nlist/v3/internal/driver"
-	"github.com/NodeSeekDev/nlist/v3/internal/errs"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	streamPkg "github.com/NodeSeekDev/nlist/v3/internal/stream"
-	"github.com/NodeSeekDev/nlist/v3/pkg/cron"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils/random"
+	"github.com/OpenListTeam/OpenList/drivers/base"
+	"github.com/OpenListTeam/OpenList/internal/driver"
+	"github.com/OpenListTeam/OpenList/internal/errs"
+	"github.com/OpenListTeam/OpenList/internal/model"
+	streamPkg "github.com/OpenListTeam/OpenList/internal/stream"
+	"github.com/OpenListTeam/OpenList/pkg/cron"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
+	"github.com/OpenListTeam/OpenList/pkg/utils/random"
 	log "github.com/sirupsen/logrus"
 )
 

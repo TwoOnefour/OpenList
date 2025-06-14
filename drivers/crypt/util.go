@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/op"
+	"github.com/OpenListTeam/OpenList/internal/op"
 )
 
 // will give the best guessing based on the path

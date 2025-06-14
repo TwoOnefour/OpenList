@@ -2,8 +2,9 @@ package tool
 
 import (
 	"fmt"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
 	"sort"
+
+	"github.com/OpenListTeam/OpenList/internal/model"
 )
 
 var (

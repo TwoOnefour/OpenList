@@ -5,10 +5,10 @@ import (
 	stdpath "path"
 	"strings"
 
-	"github.com/NodeSeekDev/nlist/v3/internal/errs"
-	"github.com/NodeSeekDev/nlist/v3/internal/model"
-	"github.com/NodeSeekDev/nlist/v3/internal/stream"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
+	"github.com/OpenListTeam/OpenList/internal/errs"
+	"github.com/OpenListTeam/OpenList/internal/model"
+	"github.com/OpenListTeam/OpenList/internal/stream"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
 	"github.com/kdomanski/iso9660"
 )
 

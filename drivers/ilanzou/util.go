@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/NodeSeekDev/nlist/v3/drivers/base"
-	"github.com/NodeSeekDev/nlist/v3/pkg/utils"
+	"github.com/OpenListTeam/OpenList/drivers/base"
+	"github.com/OpenListTeam/OpenList/pkg/utils"
 	"github.com/foxxorcat/mopan-sdk-go"
 	"github.com/go-resty/resty/v2"
 	log "github.com/sirupsen/logrus"

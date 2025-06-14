@@ -3,7 +3,7 @@ package odrvcookie
 import (
 	"net/http"
 
-	"github.com/NodeSeekDev/nlist/v3/pkg/cookie"
+	"github.com/OpenListTeam/OpenList/pkg/cookie"
 )
 
 //type SpCookie struct {

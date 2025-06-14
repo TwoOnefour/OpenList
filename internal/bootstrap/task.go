@@ -1,12 +1,12 @@
 package bootstrap
 
 import (
-	"github.com/NodeSeekDev/nlist/v3/internal/conf"
-	"github.com/NodeSeekDev/nlist/v3/internal/db"
-	"github.com/NodeSeekDev/nlist/v3/internal/fs"
-	"github.com/NodeSeekDev/nlist/v3/internal/offline_download/tool"
-	"github.com/NodeSeekDev/nlist/v3/internal/op"
-	"github.com/NodeSeekDev/nlist/v3/internal/setting"
+	"github.com/OpenListTeam/OpenList/internal/conf"
+	"github.com/OpenListTeam/OpenList/internal/db"
+	"github.com/OpenListTeam/OpenList/internal/fs"
+	"github.com/OpenListTeam/OpenList/internal/offline_download/tool"
+	"github.com/OpenListTeam/OpenList/internal/op"
+	"github.com/OpenListTeam/OpenList/internal/setting"
 	"github.com/xhofe/tache"
 )
 
