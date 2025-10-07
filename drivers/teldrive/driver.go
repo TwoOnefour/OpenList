@@ -95,11 +95,13 @@ func (d *Teldrive) Link(ctx context.Context, file model.Obj, args model.LinkArgs
 			URL: d.Address + "/api/shares/" + url.PathEscape(shareObj.Id) + "/files/" + url.PathEscape(file.GetID()) + "/" + url.PathEscape(file.GetName()),
 		}, nil
 	}
+	header := http.Header{
+		"Cookie": {d.Cookie},
+	}
+
 	return &model.Link{
-		URL: d.Address + "/api/files/" + url.PathEscape(file.GetID()) + "/" + url.PathEscape(file.GetName()),
-		Header: http.Header{
-			"Cookie": {d.Cookie},
-		},
+		URL:    d.Address + "/api/files/" + url.PathEscape(file.GetID()) + "/" + url.PathEscape(file.GetName()),
+		Header: header,
 	}, nil
 }
 
@@ -210,8 +212,8 @@ func (d *Teldrive) ArchiveDecompress(ctx context.Context, srcObj, dstDir model.O
 	return nil, errs.NotImplement
 }
 
-//func (d *Teldrive) Other(ctx context.Context, args model.OtherArgs) (interface{}, error) {
+// func (d *Teldrive) Other(ctx context.Context, args model.OtherArgs) (interface{}, error) {
 //	return nil, errs.NotSupport
-//}
+// }
 
 var _ driver.Driver = (*Teldrive)(nil)

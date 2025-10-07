@@ -4,9 +4,6 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	stdpath "path"
-	"strconv"
-
 	"github.com/OpenListTeam/OpenList/v4/internal/conf"
 	"github.com/OpenListTeam/OpenList/v4/internal/driver"
 	"github.com/OpenListTeam/OpenList/v4/internal/fs"
@@ -19,6 +16,13 @@ import (
 	"github.com/microcosm-cc/bluemonday"
 	log "github.com/sirupsen/logrus"
 	"github.com/yuin/goldmark"
+	"golang.org/x/net/context"
+	"io"
+	stdnet "net"
+	"net/http"
+	stdpath "path"
+	"strconv"
+	"strings"
 )
 
 func Down(c *gin.Context) {
@@ -45,6 +49,19 @@ func Down(c *gin.Context) {
 		}
 		redirect(c, link)
 	}
+}
+
+func clientGone(err error) bool {
+	if err == nil {
+		return false
+	}
+	// 各平台/库的典型文案（避免遗漏）
+	return errors.Is(err, context.Canceled) ||
+		errors.Is(err, stdnet.ErrClosed) ||
+		strings.Contains(err.Error(), "client disconnected") ||
+		strings.Contains(err.Error(), "broken pipe") ||
+		strings.Contains(err.Error(), "connection reset by peer") ||
+		strings.Contains(err.Error(), "stream closed")
 }
 
 func Proxy(c *gin.Context) {
@@ -97,7 +114,7 @@ func redirect(c *gin.Context, link *model.Link) {
 }
 
 func proxy(c *gin.Context, link *model.Link, file model.Obj, proxyRange bool) {
-	defer link.Close()
+
 	var err error
 	if link.URL != "" && setting.GetBool(conf.ForwardDirectLinkParams) {
 		query := c.Request.URL.Query()
@@ -107,12 +124,19 @@ func proxy(c *gin.Context, link *model.Link, file model.Obj, proxyRange bool) {
 		link.URL, err = utils.InjectQuery(link.URL, query)
 		if err != nil {
 			common.ErrorPage(c, err, 500)
+			link.Close()
 			return
 		}
 	}
 	if proxyRange {
 		link = common.ProxyRange(c, link, file.GetSize())
 	}
+	defer func(link *model.Link) {
+		err := link.Close()
+		if err != nil {
+			common.ErrorPage(c, err, http.StatusBadGateway, true)
+		}
+	}(link)
 	Writer := &common.WrittenResponseWriter{ResponseWriter: c.Writer}
 	raw, _ := strconv.ParseBool(c.DefaultQuery("raw", "false"))
 	if utils.Ext(file.GetName()) == "md" && setting.GetBool(conf.FilterReadMeScripts) && !raw {
@@ -144,15 +168,25 @@ func proxy(c *gin.Context, link *model.Link, file model.Obj, proxyRange bool) {
 	if err == nil {
 		return
 	}
-	if Writer.IsWritten() {
-		log.Errorf("%s %s local proxy error: %+v", c.Request.Method, c.Request.URL.Path, err)
-	} else {
-		if statusCode, ok := errors.Unwrap(err).(net.HttpStatusCodeError); ok {
-			common.ErrorPage(c, err, int(statusCode), true)
-		} else {
-			common.ErrorPage(c, err, 500, true)
-		}
+
+	// 先把“已开始写”的场景放大兜住
+	alreadyStarted := c.Writer.Written() || Writer.IsWritten() ||
+		c.Writer.Status() == http.StatusPartialContent ||
+		c.Writer.Header().Get("Content-Range") != ""
+
+	// 客户端/前置取消（包含 EOF 类）→ 静默结束
+	if alreadyStarted || clientGone(err) || errors.Is(err, io.EOF) || errors.Is(err, io.ErrUnexpectedEOF) {
+		log.Infof("%s %s client gone/EOF after start: %v", c.Request.Method, c.Request.URL.Path, err)
+		return
 	}
+
+	// 真正的上游错误才下发错误页；默认 502
+	sc := 502
+	var hse net.HttpStatusCodeError
+	if errors.As(err, &hse) || errors.As(errors.Unwrap(err), &hse) {
+		sc = int(hse)
+	}
+	common.ErrorPage(c, err, sc, true)
 }
 
 // TODO need optimize
