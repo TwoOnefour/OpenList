@@ -183,11 +183,7 @@ func (d *Teldrive) Put(ctx context.Context, dstDir model.Obj, file model.FileStr
 		return d.touch(file.GetName(), dstDir.GetPath())
 	}
 
-	if totalParts <= 1 {
-		return d.doSingleUpload(ctx, dstDir, file, up, totalParts, chunkSize, fileId)
-	}
-
-	return d.doMultiUpload(ctx, dstDir, file, up, maxRetried, totalParts, chunkSize, fileId)
+	return d.doSingleUpload(ctx, dstDir, file, up, maxRetried, totalParts, chunkSize, fileId)
 }
 
 func (d *Teldrive) GetArchiveMeta(ctx context.Context, obj model.Obj, args model.ArchiveArgs) (model.ArchiveMeta, error) {
