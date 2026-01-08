@@ -118,7 +118,7 @@ func (d *Cloudreve) Rename(ctx context.Context, srcObj model.Obj, newName string
 		"new_name": newName,
 		"src":      convertSrc(srcObj),
 	}
-	return d.request(http.MethodPatch, "/object/rename", func(req *resty.Request) {
+	return d.request(http.MethodPost, "/object/rename", func(req *resty.Request) {
 		req.SetBody(body)
 	}, nil)
 }
